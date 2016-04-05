@@ -2,5 +2,5 @@
     <string name="app_name">P4app</string>
     <string name="back_button">Tilbage</string>
     <string name="comic_button_describtion">Select-comic button</string>
-    <string name="front_page_title">Vælg en Sej Tegneserie</string>
+    <string name="front_page_title">Vælg en Tegneserie</string>
 </resources>
