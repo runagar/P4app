@@ -9,122 +9,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.android.mta16435.p4app.test">
-
-
+    tools:context="com.android.mta16435.p4app.MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:text="@string/front_page_title"
-        android:background="#ffffff"/>
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <Space
-        android:layout_width="@dimen/mid_space_width"
-        android:layout_height="@dimen/mid_space_height"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X"
+        android:id="@+id/axisX"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/TopSpace"/>
+        android:layout_marginTop="289dp" />
 
-    <ImageButton
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toLeftOf="@id/TopSpace"
-        android:layout_below="@id/TopSpace"
-        android:layout_toStartOf="@id/TopSpace"
-        android:id="@+id/Batman"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"
-        android:background="#00ffffff"
-        android:onClick="buttonClick"
-        android:contentDescription="@string/comic_button_describtion"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Y"
+        android:id="@+id/axisY"
+        android:layout_marginTop="155dp"
+        android:layout_below="@+id/axisX"
+        android:layout_alignLeft="@+id/axisX"
+        android:layout_alignStart="@+id/axisX" />
 
-    <ImageButton
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toRightOf="@id/TopSpace"
-        android:layout_below="@id/TopSpace"
-        android:layout_toEndOf="@id/TopSpace"
-        android:id="@+id/but2"
-        android:background="#00ffffff"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/comic_button_describtion"/>
-
-    <Space
-        android:layout_width="@dimen/mid_space_width"
-        android:layout_height="@dimen/mid_space_height"
-        android:layout_below="@id/Batman"
-        android:layout_toRightOf="@id/Batman"
-        android:layout_toEndOf="@id/Batman"
-        android:id="@+id/space2"/>
-
-    <ImageButton
-        android:contentDescription="@string/comic_button_describtion"
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toLeftOf="@id/space2"
-        android:layout_below="@id/space2"
-        android:layout_toStartOf="@id/space2"
-        android:id="@+id/comic3"
-        android:background="#00ffffff"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"/>
-
-    <ImageButton
-        android:contentDescription="@string/comic_button_describtion"
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toRightOf="@id/space2"
-        android:layout_toEndOf="@id/space2"
-        android:layout_below="@id/space2"
-        android:background="#00ffffff"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"/>
-
-    <Space
-        android:layout_width="@dimen/mid_space_width"
-        android:layout_height="@dimen/mid_space_height"
-        android:layout_below="@id/comic3"
-        android:layout_toRightOf="@id/Batman"
-        android:layout_toEndOf="@id/Batman"
-        android:id="@+id/space3"/>
-
-    <ImageButton
-        android:contentDescription="@string/comic_button_describtion"
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toLeftOf="@id/space3"
-        android:layout_below="@id/space3"
-        android:layout_toStartOf="@id/space3"
-        android:id="@+id/comic4"
-        android:background="#00ffffff"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"/>
-
-    <ImageButton
-        android:contentDescription="@string/comic_button_describtion"
-        android:layout_width="@dimen/comic_selection_button_width"
-        android:layout_height="@dimen/comic_selection_button_height"
-        android:layout_toRightOf="@id/space3"
-        android:layout_toEndOf="@id/space3"
-        android:layout_below="@id/space3"
-        android:background="#00ffffff"
-        android:src="@drawable/batman_icon"
-        android:scaleType="fitCenter"/>
-</RelativeLayout>
-</ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Z"
+        android:id="@+id/axisZ"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
